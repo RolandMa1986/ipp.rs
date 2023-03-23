@@ -53,6 +53,15 @@ pub enum Operation {
     ResumePrinter = 0x0011,
     PurgeJobs = 0x0012,
 
+    SetPrinterAttributes = 0x0013,
+    SetJobAttributes = 0x0014,
+    EnablePrinter = 0x0022,
+    DisablePrinter = 0x0023,
+    HoldNewJobs = 0x0025,
+    CancelJobs = 0x0038,
+    CancelMyJobs = 0x0039,
+    CloseJob = 0x003b,
+
     CupsGetDefault = 0x4001,
     CupsGetPrinters = 0x4002,
     CupsAddModifyPrinter = 0x4003,
