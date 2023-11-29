@@ -130,6 +130,7 @@ pub enum DelimiterTag {
     EndOfAttributes = 0x03,
     PrinterAttributes = 0x04,
     UnsupportedAttributes = 0x05,
+    SubscriptionAttributes = 0x06,
 }
 
 /// IPP value tags

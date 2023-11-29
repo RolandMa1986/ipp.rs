@@ -234,6 +234,7 @@ impl IppAttributes {
             DelimiterTag::OperationAttributes,
             DelimiterTag::JobAttributes,
             DelimiterTag::PrinterAttributes,
+            DelimiterTag::SubscriptionAttributes,
         ] {
             if let Some(group) = self.groups_of(*hdr).next() {
                 if group.tag() != DelimiterTag::OperationAttributes {
