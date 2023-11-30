@@ -169,7 +169,7 @@ where
 
         loop {
             match self.reader.read_tag().await? {
-                tag @ 0x01..=0x05 => {
+                tag @ 0x01..=0x06 => {
                     if self.state.parse_delimiter(tag)? == DelimiterTag::EndOfAttributes {
                         break;
                     }
@@ -225,7 +225,7 @@ where
 
         loop {
             match self.reader.read_tag()? {
-                tag @ 0x01..=0x05 => {
+                tag @ 0x01..=0x06 => {
                     if self.state.parse_delimiter(tag)? == DelimiterTag::EndOfAttributes {
                         break;
                     }
