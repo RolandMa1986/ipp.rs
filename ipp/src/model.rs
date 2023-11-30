@@ -53,7 +53,8 @@ pub enum Operation {
     ResumePrinter = 0x0011,
     PurgeJobs = 0x0012,
     CreatePrinterSubscription = 0x0016,
-
+    GetSubscriptions = 0x0019,
+    
     CupsGetDefault = 0x4001,
     CupsGetPrinters = 0x4002,
     CupsAddModifyPrinter = 0x4003,
